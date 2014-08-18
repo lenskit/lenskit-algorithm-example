@@ -1,6 +1,11 @@
 # LensKit Example Algorithm
 
-This demo extends [lenskit-hello][] to use a custom recommender algorithm.
+This demo extends [lenskit-hello][] to use a custom recommender algorithm.  This
+example is a user-item personalized mean recommender.
+ 
+This is intended to serve as a starting point and example for building your own
+custom algorithms.  If you want to just use a user-item personalized mean scorer
+for recommendation, use LensKit's `UserMeanItemScorer`.
 
 [lenskit-hello]: https://github.com/lenskit/lenskit-hello
 
