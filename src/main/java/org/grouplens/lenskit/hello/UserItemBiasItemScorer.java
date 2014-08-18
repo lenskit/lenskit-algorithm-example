@@ -77,7 +77,7 @@ public class UserItemBiasItemScorer extends AbstractItemScorer {
             userVector.add(-model.getGlobalMean());
             // and the item means
             userVector.addScaled(model.getItemBiases(), -1);
-            // the compute the mean of the residuals...
+            // then compute the mean of the residuals...
             double userBias = userVector.mean();
             // ... and add it to the scores
             scores.add(userBias);
