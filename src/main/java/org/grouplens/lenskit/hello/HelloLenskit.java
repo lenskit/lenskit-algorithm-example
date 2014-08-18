@@ -33,7 +33,6 @@ import org.grouplens.lenskit.core.LenskitConfiguration;
 import org.grouplens.lenskit.core.LenskitRecommender;
 import org.grouplens.lenskit.data.dao.EventDAO;
 import org.grouplens.lenskit.data.dao.SimpleFileRatingDAO;
-import org.grouplens.lenskit.knn.item.ItemItemScorer;
 import org.grouplens.lenskit.scored.ScoredId;
 import org.grouplens.lenskit.transform.normalize.BaselineSubtractingUserVectorNormalizer;
 import org.grouplens.lenskit.transform.normalize.UserVectorNormalizer;
@@ -98,7 +97,7 @@ public class HelloLenskit implements Runnable {
         // ... and configure the item scorer.  The bind and set methods
         // are what you use to do that. Here, we want an item-item scorer.
         config.bind(ItemScorer.class)
-              .to(ItemItemScorer.class);
+              .to(UserItemBiasItemScorer.class);
 
         // let's use personalized mean rating as the baseline/fallback predictor.
         // 2-step process:

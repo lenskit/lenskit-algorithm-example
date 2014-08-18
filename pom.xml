@@ -47,7 +47,7 @@
          other algorithms, e.g. SVD, depend on the relevant modules. -->
     <dependency>
       <groupId>org.grouplens.lenskit</groupId>
-      <artifactId>lenskit-knn</artifactId>
+      <artifactId>lenskit-core</artifactId>
       <version>${lenskit.version}</version>
     </dependency>
 
