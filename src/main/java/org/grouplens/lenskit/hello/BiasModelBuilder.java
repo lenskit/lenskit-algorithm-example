@@ -57,6 +57,7 @@ public class BiasModelBuilder implements Provider<BiasModel> {
             ratings.close();
         }
 
-        return new BiasModel(accum.globalMean(), accum.idMeanOffsets());
+        // Build the model, applying a little damping to item means
+        return new BiasModel(accum.globalMean(), accum.idMeanOffsets(5));
     }
 }
