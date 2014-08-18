@@ -1,22 +1,8 @@
-# LensKit Demo Project
+# LensKit Example Algorithm
 
-This is a demo project that shows how to create a project using [LensKit][] and set
-get the recommender running.  It creates a simple command line application that
-builds a recommender from a delimited text file of ratings, then recommends items
-for users specified at the command line.
+This demo extends [lenskit-hello][] to use a custom recommender algorithm.
 
-The main code is in `org.grouplens.lenskit.hello.HelloLenskit`. There are comments
-so you can follow along and see what each stage of the process does.
-
-If you are building a web application, you will need to adapt this project; the
-project type will need to be changed to a `war`, and you won't want to use the
-`HelloLenskit` main class. But the basic things done in that class will need to be
-done in your application somewhere.
-
-The [LensKit home page][LensKit] has further documentation for LensKit, as well as
-links to our bug tracker and wiki. Also be sure to subscribe to our [mailing list][]
-and ask any further questions you may have about using LensKit, and follow our
-[Twitter account][LensKitRS] for updates on new releases and developments.
+[lenskit-hello]: https://github.com/lenskit/lenskit-hello
 
 ## Project Setup
 
@@ -59,12 +45,3 @@ Have fun!
 [AppAssembler]: http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/
 [mailing list]: https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit
 [LensKitRS]: http://twitter.com/LensKitRS
-
-## Other Versions
-
-Various people have ported the lenskit-hello project to other languages:
-
-- [Clojure](https://github.com/dcj/clj-lenskit-hello) ([original Gist](https://gist.github.com/llasram/6472144))
-- [Python (Jython)](http://pastie.org/8298159)
-- [Ruby (JRuby)](https://gist.github.com/joshjordan/6446324)
-- [Scala](https://github.com/matt-thomson/lenskit-hello-scala/)
