@@ -133,7 +133,7 @@ public class HelloLenskit implements Runnable {
             List<ScoredId> recs = irec.recommend(user, 10);
             System.out.format("Recommendations for %d:\n", user);
             for (ScoredId item: recs) {
-                System.out.format("\t%d\n", item.getId());
+                System.out.format("\t%d\t%.2f\n", item.getId(), item.getScore());
             }
         }
     }
