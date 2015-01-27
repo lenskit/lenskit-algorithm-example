@@ -49,13 +49,7 @@ import java.util.List;
  */
 public class HelloLenskit implements Runnable {
     public static void main(String[] args) {
-        HelloLenskit hello = new HelloLenskit(args);
-        try {
-            hello.run();
-        } catch (RuntimeException e) {
-            System.err.println(e.getMessage());
-            System.exit(1);
-        }
+        hello.run();
     }
 
     private String delimiter = "\t";
