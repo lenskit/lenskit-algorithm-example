@@ -49,6 +49,7 @@ import java.util.List;
  */
 public class HelloLenskit implements Runnable {
     public static void main(String[] args) {
+        HelloLenskit hello = new HelloLenskit(args);
         hello.run();
     }
 
