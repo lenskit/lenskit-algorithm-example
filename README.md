@@ -32,7 +32,7 @@ Once you have a data set, you can run lenskit-hello through your IDE, or from th
 as follows:
 
     $ ./gradlew build
-    $ /bin/sh target/hello/bin/lenskit-hello.sh ml100k/u.data <userid>
+    $ /bin/sh build/install/lenskit-algorithm-example/bin/lenskit-algorithm-example ml100k/u.data <userid>
 
 The default delimiter is the tab character.
 
